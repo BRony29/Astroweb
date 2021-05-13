@@ -1,0 +1,959 @@
+/* ****************************** DEFAULT ****************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+html {
+    height: 100%;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url("/public/images/Background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #FFF;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.minTaille {
+    min-height: calc(100vh - 400px);
+    /* 390px ~ hauteur header + menu + footer */
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.md-no-display {
+    display: none;
+}
+
+.radius10 {
+    border-radius: 10px;
+}
+
+.windowTheme {
+    margin: 15px 0 0 0;
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.ligneInferieure {
+    border-bottom: 1px solid #999;
+}
+
+.ligneSuperieure {
+    border-top: 1px solid #999;
+}
+
+.hidden {
+    display: none;
+}
+
+.noresize {
+    resize: none;
+}
+
+.boite {
+    margin: 10px 15px;
+    padding: 15px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 1s ease-out;
+}
+
+.boite:hover {
+    border: 1px solid #FFF;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.boite:hover {
+    cursor: pointer;
+}
+
+.text-indent20 {
+    text-indent: 20px;
+}
+
+.titre {
+    font-family: 'Bitter', serif;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin: 0;
+    letter-spacing: 2px;
+    color: #ffffac;
+}
+
+.minititre,
+.minititreNoir {
+    font-family: 'Bitter', serif;
+    font-size: 0.9em;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+}
+
+.minititreNoir {
+    color: #666;
+}
+
+.fixed-table-pagination {
+    padding-left: 20px;
+    padding-right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #a8f6ff;
+}
+
+.table-bordered td,
+.table-bordered th {
+    border: 1px solid #555 !important;
+    border-right: 1px dashed #555 !important;
+    border-left: 1px dashed #555 !important;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.no-records-found {
+    color: #FFF !important;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ****************************** fenêtre login Success ****************************** */
+
+#loginSuccess span {
+    font-size: 0.7em;
+}
+
+#loginSuccess hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #28a745;
+}
+
+
+/* ****************************** btn-xs ****************************** */
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding: .25rem .25rem;
+    font-size: .875rem;
+    line-height: .5;
+    border-radius: .2rem;
+}
+
+
+/* ****************************** accueil ****************************** */
+
+.cursorHover {
+    transition: 0.3s;
+}
+
+.cursorHover:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* ****************************** annuaire + contenu ****************************** */
+
+#tableAnnuaire td a {
+    color: #FFF;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+#tableAnnuaire td a:hover {
+    color: #000;
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+
+/* ****************************** notifications ****************************** */
+
+
+/* ****************************** contact ****************************** */
+
+#contact h6 {
+    font-size: 0.8em;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    #contact h6 {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    #contact h6 {
+        font-size: 0.6em;
+    }
+}
+
+
+/* ****************************** login ****************************** */
+
+#loginForm a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+#forgottenPwdForm1 p,
+#forgottenPwdForm2 p,
+#forgottenPwdForm3 p {
+    font-size: 0.7em;
+}
+
+
+/* ****************************** bouton permettant de revenir en haut des pages ****************************** */
+
+#button {
+    display: inline-block;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    background-color: #6c757d;
+    width: 45px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    color: #FFF;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* ****************************** sidenav ****************************** */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 0 8px 0 32px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #f8f9fa;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.sidenav a:hover {
+    color: #bbb;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav hr {
+    margin: 10px 32px;
+    border: 0;
+    border-top: 1px solid #bbb;
+}
+
+
+/* ****************************** Table ****************************** */
+
+.card-view-title,
+.card-view-value {
+    color: #FFF;
+}
+
+
+/* ****************************** Menu ****************************** */
+
+.openbtn {
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+}
+
+.openbtn a {
+    color: #444;
+    text-decoration: none;
+}
+
+.openbtn :hover,
+.openbtn a:hover {
+    color: #000;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    .openbtn {
+        font-size: 1.1em;
+    }
+}
+
+
+/* ****************************** Actualités ****************************** */
+
+#tableActualites td {
+    font-size: 0.8em;
+}
+
+#tableActualites td a {
+    color: #FFFFAC;
+    font-size: 0.8em;
+}
+
+#tableActualites td a:hover {
+    color: #bbb;
+    text-decoration: none;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    #tableActualites td {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    #tableActualites td {
+        font-size: 0.7em;
+    }
+}
+
+
+/* ****************************** Evènements ****************************** */
+
+#tableEvenements td {
+    font-size: 0.8em;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    #tableEvenements td {
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    #tableEvenements td {
+        font-size: 0.7em;
+    }
+}
+
+
+/* ****************************** Livre D'or ****************************** */
+
+.bookTheme {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+
+/* ****************************** HEADER ****************************** */
+
+header {
+    padding: 10px 0;
+    letter-spacing: 0.1em;
+}
+
+header .logo {
+    width: 90px;
+    margin-left: 10px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 3.5em;
+    letter-spacing: 0.2em;
+}
+
+header h5 {
+    margin-bottom: 10px;
+}
+
+
+/* ****************************** FOOTER ****************************** */
+
+footer {
+    padding: 10px;
+}
+
+footer a {
+    color: #f8f9fa;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: #bbb;
+}
+
+footer hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #f8f9fa;
+}
+
+.cookieButton:hover {
+    cursor: pointer;
+    color: #bbb;
+}
+
+
+/* ****************************** ADMINISTRATIONS ****************************** */
+
+#administrations a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#administrations span {
+    font-size: 1.1em;
+}
+
+.marginAlert {
+    margin: 30px 0;
+}
+
+.adminLogin {
+    margin: 150px 0;
+}
+
+.adminLogin input {
+    margin: 10px 0;
+}
+
+.adminLogin button {
+    margin: 10px 20px 0 0;
+}
+
+.marginError {
+    margin: 100px 0;
+}
+
+.tabletd {
+    color: #FFF !important;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tableth {
+    color: #a8f6ff !important;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+/* ****************************** Rechercher ****************************** */
+
+.searchResult {
+    font-size: 0.8em;
+}
+
+.noLink a {
+    display: none;
+}
+
+
+/* ****************************** Accueil / Confidentialité / aPropos / PlanSite ****************************** */
+
+#confidentialite p,
+#planSite p,
+#aPropos_content p {
+    font-size: 0.9em;
+    color: #cccccc;
+}
+
+#accueil p {
+    font-size: 1em;
+    color: #cccccc;
+}
+
+#accueil img,
+#observatoire img {
+    border: 1px solid #444;
+}
+
+.lienAccueil a {
+    text-decoration: none;
+    color: rgb(255, 255, 172) !important;
+    font-size: 0.9em;
+}
+
+.lienAccueil a:hover {
+    color: #bbb !important;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    #accueil h5 {
+        font-size: 1em;
+    }
+    #accueil p {
+        font-size: 0.8em;
+    }
+    #confidentialite h5,
+    #accueil h6 {
+        font-size: 0.9em;
+    }
+    #confidentialite h6,
+    #confidentialite p,
+    #planSite p,
+    #aPropos_content p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    #accueil h5 {
+        font-size: 0.9em;
+    }
+    #accueil h6 {
+        font-size: 0.8em;
+    }
+}
+
+
+/* ****************************** Galeries ****************************** */
+
+#galerie img {
+    border: 1px solid #444;
+    margin: 10px 0;
+    transition: all 1s ease-out;
+}
+
+#galerie img:hover {
+    border: 1px solid #FFF;
+}
+
+.miniGalerie {
+    border: 1px solid #444;
+    max-width: 60px;
+}
+
+.titles {
+    letter-spacing: 1px;
+    color: #a8f6ff;
+    margin: 0;
+    padding-left: 25px
+}
+
+.noteModal {
+    color: #000;
+    font-size: 0.7em;
+    padding: 0 20px;
+}
+
+@media screen and (max-device-width: 767.98px) {
+    .titles {
+        font-size: 0.8em;
+    }
+}
+
+
+/* ****************************** Vie du club, accès, observatoire ****************************** */
+
+#vieduclub a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#vieduclub span {
+    font-size: 1.1em;
+}
+
+.mapouter {
+    position: relative;
+    height: 500px;
+}
+
+.mapouter iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+#observatoire p,
+#observatoire li {
+    color: #cccccc;
+    font-size: 0.9em;
+    ;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    #acces_content h4 {
+        font-size: 1em;
+    }
+    #acces_content p {
+        font-size: 0.8em;
+    }
+    #observatoire p,
+    #observatoire li {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    #observatoire h5 {
+        font-size: 0.9em;
+    }
+    #observatoire p,
+    #observatoire li {
+        font-size: 0.7em;
+    }
+}
+
+
+/* ****************************** Articles ****************************** */
+
+.miniArticle {
+    border: 1px solid #444;
+    max-width: 80px;
+}
+
+.imagesArticleBorder {
+    border: 1px solid #444;
+    border-radius: 10px;
+}
+
+#nouvelArticlesContent textarea {
+    width: 100%;
+}
+
+#articlesContent {
+    text-align: justify;
+}
+
+pre code {
+    color: #999;
+}
+
+.wysibb-text-editor {
+    background-color: #eee;
+}
+
+.titreArticles {
+    font-size: 1em;
+    margin: 0;
+}
+
+@media screen and (max-device-width: 991.98px) {
+    .titreArticles {
+        font-size: 0.9em;
+    }
+    #articlesContent {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    .titreArticles {
+        font-size: 0.8em;
+    }
+    #articlesContent {
+        font-size: 70%;
+    }
+}
+
+
+/* ****************************** Calendrier ****************************** */
+
+.calendar_table {
+    width: 100%;
+    height: calc(100vh - 384px);
+}
+
+.calendar_table td {
+    padding: 10px;
+    border: 1px solid #666;
+    vertical-align: top;
+    width: 14.29%;
+    height: 20%;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.calendar_table td:hover {
+    background-color: #000;
+}
+
+.calendar_table.calendar_table--6weeks td {
+    height: 16.66%;
+}
+
+.calendar_weekday {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.calendar_day {
+    font-size: 0.9em;
+}
+
+.calendar_othermonth .calendar_day {
+    opacity: 0.3;
+}
+
+.calendar_event {
+    font-size: 0.6em;
+}
+
+.calendar_event a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.calendar_event a:hover {
+    color: #bbb;
+}
+
+.calendar_today {
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+@media screen and (max-device-width: 991.98px) {
+    .calendar_table td {
+        padding: 10px 5px 10px 5px;
+    }
+    .calendar_weekday {
+        font-size: 0.6em;
+    }
+    .calendar_event {
+        font-size: 0.5em;
+    }
+}
+
+@media screen and (max-device-width: 767.98px) {
+    .calendar_weekday {
+        font-size: 0.3em;
+    }
+    .calendar_day {
+        font-size: 0.7em;
+    }
+    .calendar_event {
+        font-size: 0.3em;
+    }
+}
+
+
+/* ****************************** Media Queries tablettes ****************************** */
+
+@media screen and (max-device-width: 991.98px) {
+    .titre {
+        letter-spacing: 0.9px;
+        font-size: 1.2em;
+    }
+    .fixed-table-pagination {
+        font-size: 0.8em;
+    }
+    .dropdown-menu li a {
+        font-size: 0.8em;
+    }
+    #livreDor_content {
+        font-size: 0.8em;
+    }
+    .card-view-title,
+    .card-view-value,
+    .table-texte {
+        font-size: 0.9em;
+    }
+    header h1 {
+        font-size: 2.6em;
+        text-align: right;
+    }
+    header h5 {
+        font-size: 1.2em;
+    }
+    header h6 {
+        font-size: 0.8em;
+    }
+    .page-footer li {
+        font-size: 0.8em;
+    }
+    .page-footer h6,
+    .page-footer p {
+        font-size: 0.9em;
+    }
+    footer hr {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-copyright {
+        font-size: 0.9em;
+    }
+    #contenu_content p {
+        font-size: 0.9em;
+    }
+    #SettingsMenu {
+        font-size: 0.7em;
+    }
+    .searchResult {
+        font-size: 0.7em;
+    }
+}
+
+
+/* ****************************** Media Queries smartphones ****************************** */
+
+@media screen and (max-device-width: 767.98px) {
+    #button {
+        bottom: 6px;
+        right: 9px;
+        padding: 2px;
+        width: 29px;
+        height: 29px;
+    }
+    .titre {
+        font-size: 0.8em;
+    }
+    .minititre,
+    .minititreNoir {
+        margin-bottom: 1px;
+        letter-spacing: 1px;
+        font-size: 0.6em;
+    }
+    .sm-no-display {
+        display: none;
+    }
+    .md-no-display {
+        display: inline-block;
+    }
+    .fixed-table-pagination {
+        font-size: 0.6em;
+    }
+    .dropdown-menu li a {
+        font-size: 0.7em;
+    }
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 1em;
+    }
+    #livreDor_content {
+        font-size: 0.7em;
+    }
+    .card-view-title,
+    .card-view-value {
+        font-size: 0.8em;
+    }
+    .table-texte {
+        font-size: 0.7em;
+    }
+    #contenu_content p {
+        font-size: 0.8em;
+    }
+    header .logo {
+        width: 70px;
+    }
+    header h1 {
+        font-size: 1.7em;
+        text-align: right;
+    }
+    header h5 {
+        font-size: 0.8em;
+    }
+    header h6 {
+        font-size: 0.6em;
+    }
+    footer hr {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .searchResult {
+        font-size: 0.6em;
+    }
+}
+
+
+/* ****************************** Typographie ****************************** */
+
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.bColor6c757d {
+    background-color: #6c757d;
+}
+
+.noire {
+    color: #000 !important;
+}
+
+.textejaune {
+    color: #FFFFac !important;
+}
+
+.textebleue {
+    color: #a8f6ff !important;
+}
+
+.texterouge {
+    color: #ffac9a !important;
+}
+
+.texteblanc {
+    color: #FFF !important;
+}
+
+.bbb:hover {
+    color: #bbb !important;
+}
+
+.textegris {
+    color: #ccc;
+}

@@ -1,0 +1,6 @@
+- routes : Controllers.php
+- BDD mysql : Db.php
+- $fichier : Main.php
+- adresse mail formulaire contact ContactController.php
+- adresse mail mot de passe oubllié AdministrationsController.php
+- politique de confidentialité

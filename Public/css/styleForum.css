@@ -1,0 +1,79 @@
+#forum {
+    font-size: 0.9em !important;
+}
+
+#forum .table th {
+    color: #222;
+    font-size: 1.1em;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#forum .table span a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 1px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+#forum .table p a {
+    color: rgb(255, 255, 172);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    padding: 1px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+}
+
+#forum span a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#forum .table p a:hover,
+#forum .table span a:hover {
+    color: #000;
+    background-color: #FFF;
+}
+
+#SettingsMenu hr,
+#contenu hr,
+#forum hr,
+.searchResult hr {
+    margin-top: 3px;
+    margin-bottom: 7px;
+    border: 0;
+    border-top: 1px dashed #333;
+}
+
+#articlesContent blockquote,
+#forum blockquote {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 5px 0 5px 15px;
+    border-left: 10px solid #888;
+    margin: 5px 0;
+}
+
+
+/* ****************************** Media Queries tablettes ****************************** */
+
+@media screen and (max-device-width: 991.98px) {
+    #forum {
+        font-size: 0.8em !important;
+    }
+    #forum .table span a {
+        padding: 3px 6px;
+    }
+}
+
+
+/* ****************************** Media Queries smartphones ****************************** */
+
+@media screen and (max-device-width: 767.98px) {
+    #forum {
+        font-size: 0.7em !important;
+    }
+    #forum .table span a {
+        padding: 2px 5px;
+    }
+}
