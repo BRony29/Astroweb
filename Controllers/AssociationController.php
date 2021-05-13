@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\AssociationModel;
-use App\Models\MembresModel;
+use Astroweb\Models\AssociationModel;
+use Astroweb\Models\MembresModel;
 
 class AssociationController extends Controller
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\MembresModel;
-use App\Models\RecuperationModel;
+use Astroweb\Models\MembresModel;
+use Astroweb\Models\RecuperationModel;
 
 class AdministrationController extends Controller
 {
@@ -278,8 +278,8 @@ class AdministrationController extends Controller
                         <table width="600px">
                             <tr>
                                 <td>
-                                    <div align="center">Bonjour <b>' . $_SESSION['recup_login'] . '</b><br>
-                                        Voici votre code de récupération: <b>' . $recup_code . '</b><br><br>A bientôt sur <a href="http://www.ronald-begoc.fr/">Pégase</a> !
+                                    <div align="center">Bonjour <b>' . $_SESSION['recup_login'] . '</b><br>astroweb
+                                        Voici votre code de récupération: <b>' . $recup_code . '</b><br><br>A bientôt sur <a href="http://www.ronald-begoc.fr/">Astroweb</a> !
                                     </div>
                                 </td>
                             </tr>
@@ -295,7 +295,7 @@ class AdministrationController extends Controller
                     </font>
                 </body></html>';
                 // envoi du mail
-                mail($_SESSION['recup_email'], "Récupération de mot de passe - Pégase", $message, $header);
+                mail($_SESSION['recup_email'], "Récupération de mot de passe - Astroweb", $message, $header);
                 header("Location: /administration/forgottenPwd");
                 exit;
             }

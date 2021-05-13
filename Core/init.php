@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Core;
+namespace Astroweb\Core;
 
-use App\Models\SettingsModel;
-use App\Models\MembresModel;
+use Astroweb\Models\SettingsModel;
+use Astroweb\Models\MembresModel;
 
 // Initialisation des paramètres du site
 $init = new SettingsModel;

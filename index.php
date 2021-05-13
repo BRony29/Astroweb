@@ -2,10 +2,10 @@
 
 define('ROOT', str_replace('\\', '/', dirname(__DIR__)));
 
-use App\Autoloader;
-use App\Core\Main;
+use Astroweb\Autoloader;
+use Astroweb\Core\Main;
 
 require_once 'Autoloader.php';
 Autoloader::register();
-$pegase = new Main();
-$pegase->start();
+$astroweb = new Main();
+$astroweb->start();

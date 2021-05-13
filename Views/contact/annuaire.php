@@ -48,7 +48,7 @@
                             <td class="text-center align-middle table-texte tabletd"><?= $membre->codePostale ?></td>
                             <td class="text-center align-middle table-texte tabletd"><?= $membre->ville ?></td>
                             <td class="text-center align-middle table-texte tabletd"><?= $membre->tel ?></td>
-                            <td class="text-center align-middle table-texte tabletd"><a href="mailto:<?= $membre->email ?>?subject=Pégase%20Annuaire%20-%20<?= $_SESSION['user']->login ?>%20:"><i class="far fa-envelope"></i>&ensp;<?= $membre->email ?></a></td>
+                            <td class="text-center align-middle table-texte tabletd"><a href="mailto:<?= $membre->email ?>?subject=Astroweb%20Annuaire%20-%20<?= $_SESSION['user']->login ?>%20:"><i class="far fa-envelope"></i>&ensp;<?= $membre->email ?></a></td>
                         </tr>
                     <?php endif; ?>
                 <?php endforeach ?>

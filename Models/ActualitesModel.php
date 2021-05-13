@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Astroweb\Models;
 
 class ActualitesModel extends Model
 {

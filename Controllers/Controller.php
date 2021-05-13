@@ -1,21 +1,21 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\ActualitesModel;
-use App\Models\ArticlesImagesModel;
-use App\Models\ArticlesModel;
-use App\Models\EvenementsModel;
-use App\Models\GalerieModel;
-use App\Models\GaleriependingModel;
-use App\Models\LivredorsModel;
-use App\Models\MembresModel;
-use App\Models\F_categoriesModel;
-use App\Models\F_souscategoriesModel;
-use App\Models\F_topicsModel;
-use App\Models\F_messagesModel;
-use App\Models\NotificationsModel;
-use App\Models\SettingsModel;
+use Astroweb\Models\ActualitesModel;
+use Astroweb\Models\ArticlesImagesModel;
+use Astroweb\Models\ArticlesModel;
+use Astroweb\Models\EvenementsModel;
+use Astroweb\Models\GalerieModel;
+use Astroweb\Models\GaleriependingModel;
+use Astroweb\Models\LivredorsModel;
+use Astroweb\Models\MembresModel;
+use Astroweb\Models\F_categoriesModel;
+use Astroweb\Models\F_souscategoriesModel;
+use Astroweb\Models\F_topicsModel;
+use Astroweb\Models\F_messagesModel;
+use Astroweb\Models\NotificationsModel;
+use Astroweb\Models\SettingsModel;
 
 abstract class Controller
 {
@@ -35,18 +35,18 @@ abstract class Controller
         extract($donnees4);
         extract($donnees5);
         ob_start();
-        require_once ROOT . '/App/views/header.php';
+        require_once ROOT . '/Astroweb/views/header.php';
         $header = ob_get_clean();
         ob_start();
-        require_once ROOT . '/App/views/menu.php';
+        require_once ROOT . '/Astroweb/views/menu.php';
         $menu = ob_get_clean();
         ob_start();
-        require_once ROOT . '/App/views/' . $fichier . '.php';
+        require_once ROOT . '/Astroweb/views/' . $fichier . '.php';
         $contenu = ob_get_clean();
         ob_start();
-        require_once ROOT . '/App/views/footer.php';
+        require_once ROOT . '/Astroweb/views/footer.php';
         $footer = ob_get_clean();
-        require_once ROOT . '/App/views/default.php';
+        require_once ROOT . '/Astroweb/views/default.php';
     }
 
 
@@ -129,10 +129,7 @@ abstract class Controller
                 // le mot de passe est le bon : connexion
             } else {
                 $_SESSION['user'] = $membre;
-                // if (isset($_COOKIE['accept_cookie'])) {
-                //     setcookie("pegase", $_SESSION['user']->login, time() + 365 * 24 * 3600, '/', null, false, true);
-                // }
-                setcookie("pegase", $_SESSION['user']->login, time() + 365 * 24 * 3600, '/', null, false, true);
+                setcookie("astroweb", $_SESSION['user']->login, time() + 365 * 24 * 3600, '/', null, false, true);
                 if ($membre->loginError > 0) {
                     $donnees = ['loginError' => 0];
                     $traitement = $membresModel->hydrate($donnees);

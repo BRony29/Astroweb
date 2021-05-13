@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\SettingsModel;
-use App\Models\MembresModel;
+use Astroweb\Models\SettingsModel;
+use Astroweb\Models\MembresModel;
 
 class SettingsController extends Controller
 {

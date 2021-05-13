@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace Astroweb\Models;
 
 class F_messagesModel extends Model
 {

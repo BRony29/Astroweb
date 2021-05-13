@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\NotificationsModel;
+use Astroweb\Models\NotificationsModel;
 
 class NotificationsController extends Controller
 {

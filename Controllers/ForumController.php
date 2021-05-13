@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\F_categoriesModel;
-use App\Models\F_messagesModel;
-use App\Models\F_souscategoriesModel;
-use App\Models\F_topicsModel;
+use Astroweb\Models\F_categoriesModel;
+use Astroweb\Models\F_messagesModel;
+use Astroweb\Models\F_souscategoriesModel;
+use Astroweb\Models\F_topicsModel;
 
 class ForumController extends Controller
 {

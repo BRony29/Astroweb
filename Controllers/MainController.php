@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\ActualitesModel;
-use App\Models\ArticlesModel;
-use App\Models\EvenementsModel;
-use App\Models\MembresModel;
-use App\Models\F_messagesModel;
+use Astroweb\Models\ActualitesModel;
+use Astroweb\Models\ArticlesModel;
+use Astroweb\Models\EvenementsModel;
+use Astroweb\Models\MembresModel;
+use Astroweb\Models\F_messagesModel;
 
 class MainController extends Controller
 {

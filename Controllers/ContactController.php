@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\MembresModel;
+use Astroweb\Models\MembresModel;
 
 class ContactController extends Controller
 {

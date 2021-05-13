@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Core;
+namespace Astroweb\Core;
 
 use PDO;
 use PDOException;
@@ -12,7 +12,7 @@ class Db extends PDO
     private const DBHOST = 'localhost';
     private const DBUSER = 'root';
     private const DBPASS = '';
-    private const DBNAME = 'pegase';
+    private const DBNAME = 'astroweb';
 
     private function __construct()
     {

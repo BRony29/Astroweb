@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\EvenementsModel;
+use Astroweb\Models\EvenementsModel;
 
 class EvenementsController extends Controller
 {

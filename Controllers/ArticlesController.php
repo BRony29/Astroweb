@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\ArticlesImagesModel;
-use App\Models\ArticlesModel;
-use App\Models\ActualitesModel;
-use App\Models\MembresModel;
+use Astroweb\Models\ArticlesImagesModel;
+use Astroweb\Models\ArticlesModel;
+use Astroweb\Models\ActualitesModel;
+use Astroweb\Models\MembresModel;
 
 class ArticlesController extends Controller
 {

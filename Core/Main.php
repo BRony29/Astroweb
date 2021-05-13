@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Core;
+namespace Astroweb\Core;
 
-use App\Controllers\MainController;
+use Astroweb\Controllers\MainController;
 
 include 'init.php';
 
@@ -23,7 +23,7 @@ class Main
         $params = explode('/', $_GET['p']);
         if ($params[0] != '') {
             // variable $fichier en localhost
-            $controller = '\\App\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
+            $controller = '\\Astroweb\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
             $fichier = '..' . $controller . '.php';
             if (file_exists($fichier)) {
                 $controller = new $controller();

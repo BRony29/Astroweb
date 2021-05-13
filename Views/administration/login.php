@@ -4,8 +4,8 @@
         <form id="loginForm" class="col-sm-6 windowTheme" action="/Administration/connexion" method="POST">
             <div class="form-group">
                 <label for="login">Login</label>
-                <?php if (isset($_COOKIE['pegase']) && $_COOKIE['pegase'] != 'invité') : ?>
-                    <input type="text" class="form-control" name="login" aria-describedby="emailHelp" value="<?= $_COOKIE['pegase']; ?>">
+                <?php if (isset($_COOKIE['astroweb']) && $_COOKIE['astroweb'] != 'invité') : ?>
+                    <input type="text" class="form-control" name="login" aria-describedby="emailHelp" value="<?= $_COOKIE['astroweb']; ?>">
                 <?php else : ?>
                     <input type="text" class="form-control" name="login" aria-describedby="emailHelp" placeholder="Login">
                 <?php endif; ?>

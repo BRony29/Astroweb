@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\LivredorsModel;
-use App\Models\MembresModel;
+use Astroweb\Models\LivredorsModel;
+use Astroweb\Models\MembresModel;
 
 class LivredorsController extends Controller
 {

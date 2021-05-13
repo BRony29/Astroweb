@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\MembresModel;
-use App\Models\SettingsModel;
-use App\Models\ArticlesModel;
+use Astroweb\Models\MembresModel;
+use Astroweb\Models\SettingsModel;
+use Astroweb\Models\ArticlesModel;
 
 class MembresController extends Controller
 {
@@ -224,7 +224,7 @@ class MembresController extends Controller
                     'codePostale' => 00000,
                     'ville' => 'A remplir',
                     'tel' => 'A remplir',
-                    'email' => 'No-reply@pegase.fr',
+                    'email' => 'No-reply@astroweb.fr',
                     'actif' => '1',
                     'fonction' => 1,
                     'pwd' => $settings->defaultPwd,

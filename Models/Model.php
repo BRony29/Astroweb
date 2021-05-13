@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace Astroweb\Models;
 
 use DateTime;
 use DateTimeImmutable;
-use App\Core\Db;
+use Astroweb\Core\Db;
 
 class Model extends Db
 {
@@ -193,7 +193,7 @@ class Model extends Db
             // On récupère le nom du setter correspondant à l'attribut.
             $setter = 'set' . ucfirst($key);
             if (method_exists($this, $setter)) {
-                // On appelle le setter.
+                // On Astrowebelle le setter.
                 $this->$setter($value);
             }
         }

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\ActualitesModel;
+use Astroweb\Models\ActualitesModel;
 
 class ActualitesController extends Controller
 {

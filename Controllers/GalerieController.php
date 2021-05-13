@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Controllers;
+namespace Astroweb\Controllers;
 
-use App\Models\GalerieModel;
-use App\Models\GaleriependingModel;
-use App\Models\MembresModel;
+use Astroweb\Models\GalerieModel;
+use Astroweb\Models\GaleriependingModel;
+use Astroweb\Models\MembresModel;
 
 class GalerieController extends Controller
 {
