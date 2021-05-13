@@ -264,7 +264,6 @@ class AdministrationController extends Controller
                 // création du mail
                 $header = "MIME-Version: 1.0\r\n";
                 $header .= 'From:"[VOUS]"<' . $administrateurEmail . '>' . "\n";
-                // $header .= 'From:"[VOUS]"<admin@ronald-begoc.fr>' . "\n";
                 $header .= 'Content-Type:text/html; charset="utf-8"' . "\n";
                 $header .= 'Content-Transfer-Encoding: 8bit';
                 $message = '<html>
@@ -279,7 +278,7 @@ class AdministrationController extends Controller
                             <tr>
                                 <td>
                                     <div align="center">Bonjour <b>' . $_SESSION['recup_login'] . '</b><br>astroweb
-                                        Voici votre code de récupération: <b>' . $recup_code . '</b><br><br>A bientôt sur <a href="http://www.ronald-begoc.fr/">Astroweb</a> !
+                                        Voici votre code de récupération: <b>' . $recup_code . '</b><br><br>A bientôt sur <a href="http://www.astroweb.fr/">Astroweb</a> !
                                     </div>
                                 </td>
                             </tr>

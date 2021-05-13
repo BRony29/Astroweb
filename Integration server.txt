@@ -1,6 +1,8 @@
+Lite des paramètres à mettre à jour pour mettre le site en production.
+
 - routes : Controllers.php
 - BDD mysql : Db.php
 - $fichier : Main.php
-- adresse mail formulaire contact ContactController.php
-- adresse mail mot de passe oubllié AdministrationsController.php
-- politique de confidentialité
+- message (lien web) à mettre à jour dans AdministrationsController.php
+- politique de confidentialité (adresse du site en contact)
+- adresse mail de l'administrateur et des modérateurs dans la BDD.
