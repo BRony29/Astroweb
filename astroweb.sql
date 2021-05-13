@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 13 mai 2021 à 19:07
+-- Généré le : jeu. 13 mai 2021 à 21:31
 -- Version du serveur :  10.4.13-MariaDB
 -- Version de PHP : 7.4.8
 
@@ -356,7 +356,8 @@ INSERT INTO `membres` (`id`, `nom`, `prenom`, `login`, `pwd`, `actif`, `fonction
 (1, 'admin', 'admin', 'admin', '$2y$10$d36uBZ9YdSA.l7SgkJoSgez3U5rWCaMLkN1jAVbh0uh0QuZU.XI6C', 1, 3, '', 0, '', '', 'admin@astroweb.fr', 1, 0),
 (2, 'invité', 'invité', 'invité', '', 1, 0, '', 0, '', '', '', 1, 0),
 (3, 'Galilei', 'Galileo', 'Galilé', '$2y$10$NIyMaSvU6eCepnwdhFEKFeSV/fGiMHT/eVRZoRiigEWIpotn26ami', 1, 1, '12 rue de Lilas', 29290, 'saint-Renan', '1111111111', '1111.11@11.com', 1, 0),
-(4, 'Copernic', 'Nicolas', 'Nico', '$2y$10$2WNzcK2FRZY8Rr0I0KChwO98qQoKR9TUEShNnwqkWyWrfu.I1zPAy', 1, 2, '14 rue des Roses', 29830, 'Ploudalmézeau', '2222222222', '222.2222@222.com', 1, 0);
+(4, 'Copernic', 'Nicolas', 'Nico', '$2y$10$2WNzcK2FRZY8Rr0I0KChwO98qQoKR9TUEShNnwqkWyWrfu.I1zPAy', 1, 2, '14 rue des Roses', 29830, 'Ploudalmézeau', '2222222222', '222.2222@222.com', 1, 0),
+(5, 'Guest', 'Guest', 'Guest', '$2y$10$1BxEaqalfUBYiCk69IjUB.tfZE6Xy/BGifdqpLg4Gin8UCEYXE8ze', 1, 1, 'A remplir', 0, 'A remplir', 'A remplir', 'No-reply@astroweb.fr', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -598,7 +599,7 @@ ALTER TABLE `livredors`
 -- AUTO_INCREMENT pour la table `membres`
 --
 ALTER TABLE `membres`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `notifications`
